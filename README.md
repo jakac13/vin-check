@@ -18,17 +18,17 @@
 
 ## Screenshots 📸  
 ### 1. Login Screen  
-![Screenshot_2024-01-24-19-48-16-44_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/9189c39a-4ead-46f1-a9aa-3ba80eb373c3)
+<img src="https://github.com/user-attachments/assets/9189c39a-4ead-46f1-a9aa-3ba80eb373c3" width="300" />
 
 ### 2. Vehicle Details  
-![VIN ![Screenshot_2023-11-23-23-58-53-44_f73b71075b1de7323614b647fe394240 (2)](https://github.com/user-attachments/assets/f60b8dad-3b18-4fc2-96e4-2fa6b6951b18)
+<img src="https://github.com/user-attachments/assets/f60b8dad-3b18-4fc2-96e4-2fa6b6951b18" width="300" />
 
 ### 3. Mileage History Graph  
-![Screenshot_2024-01-24-19-48-59-67_f73b71075b1de7323614b647fe394240 (1)](https://github.com/user-attachments/assets/18ee26bd-c34b-45b6-8247-766df9838225)
+<img src="https://github.com/user-attachments/assets/18ee26bd-c34b-45b6-8247-766df9838225" width="300" />
 
 ### 4. Vehicle Status Info  
-![Screenshot_2024-01-24-19-48-52-42_f73b71075b1de7323614b647fe394240 (1)](https://github.com/user-attachments/assets/8a72c2b1-d998-4683-a4b7-2f4a8af5ca9d)
-![Screenshot_2023-11-17-12-29-45-56_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/c4c9df34-4b5d-40a9-aea5-88cb84c0b543)
+<img src="https://github.com/user-attachments/assets/8a72c2b1-d998-4683-a4b7-2f4a8af5ca9d" width="300" />  
+<img src="https://github.com/user-attachments/assets/c4c9df34-4b5d-40a9-aea5-88cb84c0b543" width="300" />
 
 
 ---
