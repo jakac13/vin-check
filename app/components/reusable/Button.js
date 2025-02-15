@@ -9,7 +9,7 @@ const Button = ({onPress, label, disabled}) => {
     underlayColor={Colors.TERTIARY}
     onPress={onPress}
     style={{paddingHorizontal: 20, backgroundColor: !disabled ? Colors.PRIMARY : Colors.EXTRA_GRAY, borderRadius: 5, justifyContent: 'center', alignItems:'center', padding: 10}}>
-        <Text style={{color: Colors.TEXT_SECONDARY, fontFamily: 'Poppins-Bold'}}>{label}</Text>
+        <Text style={{color: Colors.TEXT_SECONDARY, fontFamily: 'Poppins-Bold',}}>{label}</Text>
     </TouchableHighlight>
   )
 }
