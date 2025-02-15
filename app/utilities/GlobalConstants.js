@@ -33,6 +33,11 @@ export const styles = StyleSheet.create({
       fontSize: fontSize.title2,
       color: Colors.PRIMARY
     },
+    textHeadline: {
+      fontFamily: 'Poppins-Bold',
+      fontSize: fontSize.headline,
+      color: Colors.PRIMARY
+    },
     dataContainer: {
         flexBasis: 120
     }

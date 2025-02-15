@@ -1,0 +1,535 @@
+[
+    {
+        "vin": "vf1rfb00557744840",
+        "katgorija": "m1",
+        "znamka": "renault",
+        "model_simple": "megane",
+        "model_detail": "megane / grandtour 1.2 / 16v",
+        "drzava_izvora": "francija",
+        "gorivo": "bencin",
+        "motor_moc": 97.0,
+        "motor_v": 1197.0,
+        "masa": 1368.0,
+        "barva_simple": "siva",
+        "barva_detail": "kovinski - siva - svetla",
+        "prva_registracija": "2017-04-12",
+        "prva_registracija_slo": "2017-04-12",
+        "prva_registracija_obmocje": "celje",
+        "prva_registracija_leto": 2017,
+        "prva_registracija_slo_leto": 2017,
+        "prva_registracija_mesec": 4,
+        "prva_registracija_slo_mesec": 4,
+        "km": 42501.0,
+        "uporabnik_p_f": "f",
+        "lastnik_p_f": "f",
+        "uporabnik_je_lastnik": 1,
+        "lastnik_starost": 70,
+        "uporabnik_starost": 70,
+        "uporabnik_spol": "m",
+        "uporabnik_obcina": "celje",
+        "uporabnik_regija": "savinjska",
+        "teh_pregled_status": null,
+        "teh_pregled_izv_enota": null,
+        "uvozeno": 0,
+        "warn_teh_pregled": 0,
+        "aktivnost": [
+            2022,
+            2021,
+            2020,
+            2019,
+            2018,
+            2017
+        ],
+        "his": {
+            "km": {
+                "2022": 42501.0,
+                "2021": 42501.0
+            },
+            "uporabnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f"
+            },
+            "lastnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f"
+            },
+            "uporabnik_je_lastnik": {
+                "2022": 1,
+                "2021": 1,
+                "2020": 1,
+                "2019": 1,
+                "2018": 1,
+                "2017": 1
+            },
+            "lastnik_starost": {
+                "2022": 70,
+                "2021": 69,
+                "2020": 68,
+                "2019": 67,
+                "2018": 66,
+                "2017": 65
+            },
+            "uporabnik_starost": {
+                "2022": 70,
+                "2021": 69,
+                "2020": 68,
+                "2019": 67,
+                "2018": 66,
+                "2017": 65
+            },
+            "uporabnik_spol": {
+                "2022": "m",
+                "2021": "m",
+                "2020": "m",
+                "2019": "m",
+                "2018": "m",
+                "2017": "m"
+            },
+            "uporabnik_obcina": {
+                "2022": "celje",
+                "2021": "celje",
+                "2020": "celje",
+                "2019": "celje",
+                "2018": "celje",
+                "2017": "celje"
+            },
+            "uporabnik_regija": {
+                "2022": "savinjska",
+                "2021": "savinjska",
+                "2020": "savinjska",
+                "2019": "savinjska",
+                "2018": "savinjska",
+                "2017": "savinjska"
+            },
+            "teh_pregled_status": {
+                "2021": "pogojno brezhiben",
+                "2017": "brezhiben"
+            },
+            "teh_pregled_izv_enota": {
+                "2021": "stajerski avto dom d.o.o.",
+                "2017": "stajerski avto dom d.o.o."
+            }
+        },
+        "razpon_km": "+10000",
+        "prevrteni_km": 1,
+        "warn_km": 1
+    },
+    {
+        "vin": "3mddj6hv51m132887",
+        "katgorija": "m1",
+        "znamka": "mazda",
+        "model_simple": "mazda 2",
+        "model_detail": "mazda 2 / g75 /",
+        "drzava_izvora": "japonska",
+        "gorivo": "bencin",
+        "motor_moc": 55.0,
+        "motor_v": 1496.0,
+        "masa": 1045.0,
+        "barva_simple": "bela",
+        "barva_detail": "kovinski - bela - temna",
+        "prva_registracija": "2016-04-25",
+        "prva_registracija_slo": "2016-04-25",
+        "prva_registracija_obmocje": "maribor",
+        "prva_registracija_leto": 2016,
+        "prva_registracija_slo_leto": 2016,
+        "prva_registracija_mesec": 4,
+        "prva_registracija_slo_mesec": 4,
+        "km": 40014.0,
+        "uporabnik_p_f": "f",
+        "lastnik_p_f": "f",
+        "uporabnik_je_lastnik": 1,
+        "lastnik_starost": 57,
+        "uporabnik_starost": 57,
+        "uporabnik_spol": "z",
+        "uporabnik_obcina": "ptuj",
+        "uporabnik_regija": "podravska",
+        "teh_pregled_status": "brezhiben",
+        "teh_pregled_izv_enota": "amzs d.d. pe ptuj",
+        "uvozeno": 0,
+        "warn_teh_pregled": 0,
+        "aktivnost": [
+            2022,
+            2021,
+            2020,
+            2019,
+            2018,
+            2017,
+            2016
+        ],
+        "his": {
+            "km": {
+                "2022": 40014.0,
+                "2021": 30433.0,
+                "2020": 30433.0
+            },
+            "uporabnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "f"
+            },
+            "lastnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "p"
+            },
+            "uporabnik_je_lastnik": {
+                "2022": 1,
+                "2021": 1,
+                "2020": 1,
+                "2019": 1,
+                "2018": 1,
+                "2017": 1,
+                "2016": 0
+            },
+            "lastnik_starost": {
+                "2022": 57,
+                "2021": 56,
+                "2020": 55,
+                "2019": 54,
+                "2018": 53,
+                "2017": 52
+            },
+            "uporabnik_starost": {
+                "2022": 57,
+                "2021": 56,
+                "2020": 55,
+                "2019": 54,
+                "2018": 53,
+                "2017": 52,
+                "2016": 51
+            },
+            "uporabnik_spol": {
+                "2022": "z",
+                "2021": "z",
+                "2020": "z",
+                "2019": "z",
+                "2018": "z",
+                "2017": "z",
+                "2016": "z"
+            },
+            "uporabnik_obcina": {
+                "2022": "ptuj",
+                "2021": "ptuj",
+                "2020": "ptuj",
+                "2019": "ptuj",
+                "2018": "ptuj",
+                "2017": "ptuj",
+                "2016": "ptuj"
+            },
+            "uporabnik_regija": {
+                "2022": "podravska",
+                "2021": "podravska",
+                "2020": "podravska",
+                "2019": "podravska",
+                "2018": "podravska",
+                "2017": "podravska",
+                "2016": "podravska"
+            },
+            "teh_pregled_status": {
+                "2022": "brezhiben",
+                "2020": "brezhiben",
+                "2016": "brezhiben"
+            },
+            "teh_pregled_izv_enota": {
+                "2022": "amzs d.d. pe ptuj",
+                "2020": "amzs d.d. pe ptuj",
+                "2016": "avto krka mb d.o.o."
+            }
+        },
+        "razpon_km": "+10000",
+        "prevrteni_km": 1,
+        "warn_km": 1
+    },
+    {
+        "vin": "wauzzz4f46n046732",
+        "katgorija": "m1",
+        "znamka": "audi",
+        "model_simple": "a6",
+        "model_detail": "a6 / avant 3.0 / tdi q aut.",
+        "drzava_izvora": "nemcija",
+        "gorivo": "dizel",
+        "motor_moc": 165.0,
+        "motor_v": 2967.0,
+        "masa": 1900.0,
+        "barva_simple": "crna",
+        "barva_detail": "kovinski - crna - srednja",
+        "prva_registracija": "2005-07-20",
+        "prva_registracija_slo": "2006-03-27",
+        "prva_registracija_obmocje": "celje",
+        "prva_registracija_leto": 2005,
+        "prva_registracija_slo_leto": 2006,
+        "prva_registracija_mesec": 7,
+        "prva_registracija_slo_mesec": 3,
+        "km": 309100.0,
+        "uporabnik_p_f": "f",
+        "lastnik_p_f": "f",
+        "uporabnik_je_lastnik": 1,
+        "lastnik_starost": 25,
+        "uporabnik_starost": 25,
+        "uporabnik_spol": "z",
+        "uporabnik_obcina": "zrece",
+        "uporabnik_regija": "savinjska",
+        "teh_pregled_status": null,
+        "teh_pregled_izv_enota": null,
+        "uvozeno": 1,
+        "warn_teh_pregled": 0,
+        "aktivnost": [
+            2022,
+            2021,
+            2020,
+            2019,
+            2018,
+            2017,
+            2016
+        ],
+        "his": {
+            "km": {
+                "2022": 309100.0,
+                "2021": 309100.0,
+                "2020": 293535.0,
+                "2019": 282123.0,
+                "2018": 276125.0,
+                "2017": 267850.0,
+                "2016": 238381.0
+            },
+            "uporabnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "f"
+            },
+            "lastnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "f"
+            },
+            "uporabnik_je_lastnik": {
+                "2022": 1,
+                "2021": 1,
+                "2020": 1,
+                "2019": 1,
+                "2018": 1,
+                "2017": 1,
+                "2016": 1
+            },
+            "lastnik_starost": {
+                "2022": 25,
+                "2021": 31,
+                "2020": 28,
+                "2019": 25,
+                "2018": 28,
+                "2017": 27,
+                "2016": 26
+            },
+            "uporabnik_starost": {
+                "2022": 25,
+                "2021": 31,
+                "2020": 28,
+                "2019": 25,
+                "2018": 28,
+                "2017": 27,
+                "2016": 26
+            },
+            "uporabnik_spol": {
+                "2022": "z",
+                "2021": "m",
+                "2020": "m",
+                "2019": "m",
+                "2018": "m",
+                "2017": "m",
+                "2016": "m"
+            },
+            "uporabnik_obcina": {
+                "2022": "zrece",
+                "2021": "vitanje",
+                "2020": "slovenska bistrica",
+                "2019": "slovenska bistrica",
+                "2018": "hoce-slivnica",
+                "2017": "hoce-slivnica",
+                "2016": "hoce-slivnica"
+            },
+            "uporabnik_regija": {
+                "2022": "savinjska",
+                "2021": "savinjska",
+                "2020": "podravska",
+                "2019": "podravska",
+                "2018": "podravska",
+                "2017": "podravska",
+                "2016": "podravska"
+            },
+            "teh_pregled_status": {
+                "2021": "brezhiben",
+                "2020": "brezhiben",
+                "2019": "brezhiben",
+                "2018": "brezhiben",
+                "2017": "pogojno brezhiben",
+                "2016": "brezhiben"
+            },
+            "teh_pregled_izv_enota": {
+                "2021": "i center d.o.o. pe slovenska bistrica",
+                "2020": "i center d.o.o. pe slovenska bistrica",
+                "2019": "i center d.o.o. pe slovenska bistrica",
+                "2018": "i center d.o.o. pe slovenska bistrica",
+                "2017": "avto krka pom d.o.o. pe slovenska bistrica",
+                "2016": "a2s registracije d.o.o."
+            }
+        },
+        "razpon_km": "+300000",
+        "prevrteni_km": 1,
+        "warn_km": 1
+    },
+    {
+        "vin": "sjnfaaj11u1302566",
+        "katgorija": "m1",
+        "znamka": "nissan",
+        "model_simple": "qashqai",
+        "model_detail": "qashqai / 1.5 / dci",
+        "drzava_izvora": "zdruzeno kraljestvo",
+        "gorivo": "dizel",
+        "motor_moc": 81.0,
+        "motor_v": 1461.0,
+        "masa": 1385.0,
+        "barva_simple": "bela",
+        "barva_detail": "navaden - bela - svetla",
+        "prva_registracija": "2015-02-04",
+        "prva_registracija_slo": "2015-02-18",
+        "prva_registracija_obmocje": "murska sobota",
+        "prva_registracija_leto": 2015,
+        "prva_registracija_slo_leto": 2015,
+        "prva_registracija_mesec": 2,
+        "prva_registracija_slo_mesec": 2,
+        "km": 94801.0,
+        "uporabnik_p_f": "f",
+        "lastnik_p_f": "p",
+        "uporabnik_je_lastnik": 0,
+        "lastnik_starost": null,
+        "uporabnik_starost": 43,
+        "uporabnik_spol": "m",
+        "uporabnik_obcina": "lendava",
+        "uporabnik_regija": "pomurska",
+        "teh_pregled_status": null,
+        "teh_pregled_izv_enota": null,
+        "uvozeno": 1,
+        "warn_teh_pregled": 0,
+        "aktivnost": [
+            2022,
+            2021,
+            2020,
+            2019,
+            2018,
+            2017,
+            2016
+        ],
+        "his": {
+            "km": {
+                "2022": 94801.0,
+                "2021": 94801.0,
+                "2020": 72203.0,
+                "2019": 72203.0
+            },
+            "uporabnik_p_f": {
+                "2022": "f",
+                "2021": "f",
+                "2020": "f",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "f"
+            },
+            "lastnik_p_f": {
+                "2022": "p",
+                "2021": "p",
+                "2020": "p",
+                "2019": "f",
+                "2018": "f",
+                "2017": "f",
+                "2016": "f"
+            },
+            "uporabnik_je_lastnik": {
+                "2022": 0,
+                "2021": 0,
+                "2020": 0,
+                "2019": 1,
+                "2018": 1,
+                "2017": 1,
+                "2016": 1
+            },
+            "lastnik_starost": {
+                "2019": 64,
+                "2018": 63,
+                "2017": 62,
+                "2016": 61
+            },
+            "uporabnik_starost": {
+                "2022": 43,
+                "2021": 42,
+                "2020": 41,
+                "2019": 64,
+                "2018": 63,
+                "2017": 62,
+                "2016": 61
+            },
+            "uporabnik_spol": {
+                "2022": "m",
+                "2021": "z",
+                "2020": "z",
+                "2019": "m",
+                "2018": "m",
+                "2017": "m",
+                "2016": "m"
+            },
+            "uporabnik_obcina": {
+                "2022": "lendava",
+                "2021": "sevnica",
+                "2020": "sevnica",
+                "2019": "novo mesto",
+                "2018": "novo mesto",
+                "2017": "novo mesto",
+                "2016": "novo mesto"
+            },
+            "uporabnik_regija": {
+                "2022": "pomurska",
+                "2021": "posavska",
+                "2020": "posavska",
+                "2019": "jugovzhodna slovenija",
+                "2018": "jugovzhodna slovenija",
+                "2017": "jugovzhodna slovenija",
+                "2016": "jugovzhodna slovenija"
+            },
+            "teh_pregled_status": {
+                "2021": "brezhiben",
+                "2019": "brezhiben"
+            },
+            "teh_pregled_izv_enota": {
+                "2021": "pan jan d.o.o. pe ivancna gorica",
+                "2019": "as domzale moto center d.o.o."
+            }
+        },
+        "razpon_km": "+50000",
+        "prevrteni_km": 1,
+        "warn_km": 1
+    }
+]

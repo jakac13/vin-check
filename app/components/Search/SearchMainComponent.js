@@ -3,82 +3,136 @@ import React, { useEffect, useState } from 'react'
 import SearchComponent from './SearchComponent'
 import CarDetailsComponent from './CarDetailsComponent';
 import Colors from '../../utilities/Colors';
-import { styleVariables } from '../../utilities/GlobalConstants';
-import axios from 'axios';
+import { styleVariables, styles as style } from '../../utilities/GlobalConstants';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { fontSize } from '../../utilities/GlobalConstants';
+import { fetchVehicle } from '../../api/fetchVehicle' 
+import { getAuth } from 'firebase/auth';
+import { FETCH_STATUS, SAVE_STATUS } from '../../api/fetchStatus';
+import { showToastMessage } from '../reusable/Toast';
+import { checkIfVehicleInFavorites } from '../../api/firebaseWS';
 
-export default SearchMainComponent = () => {
-
+export default SearchMainComponent = (props) => {
     const [carData, setCarData] = useState(null);
-    const [animationSpeed, setAnimationSpeed] = useState(0.1);
-    const [isLoading, setIsLoading] = useState(false);
-    const [searchInput, setSearchInput] = useState('WDD2040081A103553');
     const [errorState, setError] = useState('');
+    const [status, setStatus] = useState(FETCH_STATUS.IDLE);
+    const [isVehicleInFavorites, setVehicleInFavorites] = useState(false);
+    const [isCarSaved, setIsCarSaved] = useState(false);
 
-    const setSearchInputState = (text) => {
-        setSearchInput(text);
+    const auth = getAuth();
+    const user = auth.currentUser;
+
+    useEffect(() => {
+        if(props.vehicleData) {
+            fetchVehicleHandler(props.vehicleData.vin);
+        }
+    }, []);
+
+    async function checkIfInFavorites(vin) {
+        try {
+            const existStatus = await checkIfVehicleInFavorites(user.uid, vin);
+            setVehicleInFavorites(existStatus);
+            console.log('Exist status: ' + JSON.stringify(existStatus))
+        } catch (error) {
+            showToastMessage('error', 'Prišlo je do napake', 'Napaka pri iskanju vozila med priljubljenimi vozili...')
+        }
     }
 
-    useEffect(()=>{
-        console.log(searchInput)
-    }, [searchInput])
-
-    async function fetchVehicles() {
+    /* async function fetchVehicleHandler(vinNumber) {
         try {
+            console.log(vinNumber)
             Keyboard.dismiss();
-            setIsLoading(true);
-            setAnimationSpeed(1.5)
-            const response = await axios.get(`https://api-aw46ycnrva-ey.a.run.app/api/v0/vehicles?vin=${searchInput}`);
-            console.log(response.data.status)
-            setCarData(response.data.result);
-            console.log(JSON.stringify(response.data.result));
-        } catch (error) {
-            if (error.response) {
-                console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.headers);
+            setStatus(FETCH_STATUS.LOADING);
+    
+            const data = await fetchVehicle(vinNumber);
 
+            if(data.result) {
+                setCarData(data.result);
+                setStatus(FETCH_STATUS.SUCCESS);
+                setError('');
+            }
+            
+        } catch (error) {
+            console.log(error)
+            let errorMessage = 'An error occurred';
+            if (error.response) {
                 switch(error.response.status) {
                     case 400:
-                        setError('Vozila ne najdemo. Znova preverite VIN številko.');
+                        errorMessage = 'Vozila ne najdemo. Preverite VIN številko.';
                         break;
                     case 500:
-                        setError('Napaka na strežniku.');
+                        errorMessage = 'Napaka na strežniku.';
                         break;
                     default:
-                        setError('Prišlo je do napake: ' + error.message);
+                        errorMessage = 'Prišlo je do napake: ' + error.message;
                         break;
                 }
-              } else if (error.request) {
-                console.log(error.request);
-                setError('Network Error: Please check your internet connection.');
-              } else {
-                console.log('Error', error.message);
-                setError('Prišlo je do napake: ' + error.message);
-              }
-              console.log(error.config);
+            } else if (error.request) {
+                errorMessage = 'Network Error: Please check your internet connection.';
+            } else {
+                errorMessage = 'Prišlo je do napake: ' + error.message;
+            }
+            setStatus(FETCH_STATUS.ERROR);
+            setError(errorMessage);
         } finally {
-            setIsLoading(false);
-            setAnimationSpeed(0.1)
+            setIsCarSaved(false);
             if (errorState) {
                 Alert.alert('Error', errorState);
             }
         }
-      }
+    } */
+
+    async function fetchVehicleHandler(vinNumber) {
+        try {
+            console.log("VIN Number:", vinNumber);
+            Keyboard.dismiss();
+            setStatus(FETCH_STATUS.LOADING);
+    
+            const vehicleData = await fetchVehicle(vinNumber);
+    
+            if (vehicleData) {
+                setCarData(vehicleData); // Assuming vehicleData is the correct format
+                setStatus(FETCH_STATUS.SUCCESS);
+                setError('');
+            } else {
+                // Handle case where no vehicle is found
+                setStatus(FETCH_STATUS.ERROR);
+                setError('Vozila ne najdemo. Preverite VIN številko.');
+            }
+        } catch (error) {
+            console.error("Error in fetchVehicleHandler:", error);
+            setStatus(FETCH_STATUS.ERROR);
+            setError('An error occurred: ' + error.message);
+        } finally {
+            setIsCarSaved(false);
+            if (errorState) {
+                Alert.alert('Error', errorState);
+            }
+        }
+    }
+    
 
     return (
-            <SafeAreaView style={{backgroundColor: Colors.BACKGROUND, paddingHorizontal: styleVariables.paddingHorizontal,}}>
-                <ScrollView showsVerticalScrollIndicator={false} overScrollMode='never' stickyHeaderIndices={[1]} style={{backgroundColor: Colors.BACKGROUND}}>
-                    <Text style={{fontFamily: 'Poppins-Bold', fontSize: fontSize.title, paddingTop: 10 }}>Poišči vozilo</Text>
-                    <View style = {[styles.stickyHeaderContainer]}>
-                        <SearchComponent isLoading={isLoading} fetchVehicles={fetchVehicles} setSearchInputState={setSearchInputState}/>
-                    </View>
-                    <View style = {[styles.viewContainer]}>
-                        <CarDetailsComponent isLoading={isLoading} carData={carData} animationSpeed={animationSpeed}/>
-                    </View>
-                </ScrollView>
-            </SafeAreaView>
+        <SafeAreaView style={
+            {backgroundColor: Colors.BACKGROUND, 
+            paddingHorizontal: styleVariables.paddingHorizontal, 
+            flex: 1}}>
+            <ScrollView 
+            showsVerticalScrollIndicator={false} 
+            overScrollMode='never' 
+            stickyHeaderIndices=
+                {props.displaySearchBar ? [1] : []} style={{backgroundColor: Colors.BACKGROUND}}>
+                {props.displaySearchBar && 
+                <Text style={{fontFamily: 'Poppins-Bold', fontSize: fontSize.title, paddingTop: 10 }}>Poišči vozilo</Text>}
+                {props.displaySearchBar && 
+                <View style = {[styles.stickyHeaderContainer]}>
+                    <SearchComponent status={status} fetchVehicleHandler={fetchVehicleHandler}/>
+                </View>}
+                <View style={[styles.viewContainer]}>
+                    <CarDetailsComponent vehicleData={props.vehicleData} isCarSaved={isCarSaved} setIsCarSaved={setIsCarSaved} status={status} carData={carData}/>
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
@@ -86,10 +140,11 @@ const styles = StyleSheet.create({
     viewContainer: {
         backgroundColor: Colors.BACKGROUND, 
         gap: 20,
+        marginBottom: 20,
     },
     stickyHeaderContainer: {
         backgroundColor: Colors.BACKGROUND, 
         paddingBottom: 20,
         paddingTop: 5
-    }
+    },
 })
